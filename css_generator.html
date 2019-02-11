@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CSS Code Snippet Generator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap CDN with 'Sketchy' Bootswatch Theme -->
+	<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.2.1/sketchy/bootstrap.min.css" rel="stylesheet" integrity="sha384-Yr9hLdz4zKsdMcB2IUf0I2Y+KFalEfJez2d0H2rgQoAYjvm/mzbm2egxZ9Gc9kkg" crossorigin="anonymous">
+	<!-- PrettyPrint Styling -->
+	<link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+	<h1 class="title">CSS Snippet Generator</h1>
+	<!-- CSS Snippet Container	-->
+	<div class="container" id="css_print"></div>
+	<!-- CSS Snippet Template -->
+	<pre class="container prettyprint linenums" id="css-snippet">
+	.post-<span class="nocode" id="postNumber"></span>.is_sample {
+		background: linear-gradient(
+			rgba(0, 0, 0, 0.9),
+			rgba(255, 20, 147, 0.3)
+		),
+		url(https://www.example.com/thumbnails/<span class="nocode" id="thumbnail"></span>.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	} </pre>
+
+	<div class="container" id="buttons">
+		<button class="btn btn-secondary" onclick="generateCss()">Generate Snippets</button>
+		<button class="btn btn-primary" onclick="printCss()">Print Snippets</button>
+	</div>
+
+	<!-- CSS Snippet Output Script-->
+	<script src="generator.js"></script>
+	<!-- PrettyPrint JS -->
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</body>
+</html>
