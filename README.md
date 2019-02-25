@@ -2,7 +2,7 @@
 
 Generate formatted CSS which would otherwise be tedious to code by hand.
 
-Using variables and a bit of custom logic, you can generate repetitive code snippets with parameters that differ slightly from snippet-to-snippet.
+Using variables and a bit of custom logic, you can generate repetitive code snippets with parameters/arguments that differ slightly from snippet-to-snippet.
 
 Project utilizes the [prettify.js](https://github.com/google/code-prettify) library by Google and [Vim Sunburst Theme](https://github.com/google/code-prettify/blob/master/styles/sunburst.css) by David Leibovic.
 
