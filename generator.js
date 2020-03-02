@@ -42,3 +42,5 @@ function printCss() {
 				console.log(module, storeVals[module]);
 		}
 }
+
+console.log("This class rocks!");
